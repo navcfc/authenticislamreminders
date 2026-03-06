@@ -157,7 +157,7 @@
 
     .hero-logo-img {
       width: 160px;
-      margin-bottom: 16px;
+      margin-bottom: 12px;
       filter: drop-shadow(0 4px 24px rgba(26,95,168,0.18));
       animation: float 4s ease-in-out infinite;
     }
@@ -395,6 +395,27 @@
       margin-bottom: 18px;
       font-size: 1.3rem;
     }
+
+    .card-icon.card-people {
+      width: 78px;
+      justify-content: flex-start;
+      padding: 0 10px;
+      overflow: visible;
+    }
+
+    .card-icon.card-people.three { width: 96px; }
+
+    .card-person {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      border: 2px solid var(--white);
+      object-fit: cover;
+      box-shadow: 0 2px 8px rgba(13,42,77,0.14);
+      margin-left: -8px;
+    }
+
+    .card-person:first-child { margin-left: 0; }
 
     .card-title {
       font-family: 'Cormorant Garamond', serif;
@@ -782,12 +803,19 @@
     </div>
     <div class="content-grid">
       <div class="content-card fade-in">
-        <div class="card-icon">🕌</div>
+        <div class="card-icon card-people">
+          <img class="card-person" src="assets/scholars/tim-humble.jpg" alt="Ustadh Tim Humble">
+          <img class="card-person" src="assets/scholars/abdurrahman-hassan.jpg" alt="Ustadh Abdur Rahman Hassan">
+        </div>
         <h3 class="card-title">Short Islamic Reminders</h3>
         <p class="card-desc">Concise, heart-touching reminders designed for the busy Muslim — easy to watch, impossible to forget.</p>
       </div>
       <div class="content-card fade-in">
-        <div class="card-icon">🎓</div>
+        <div class="card-icon card-people three">
+          <img class="card-person" src="assets/scholars/sulayman-ruhayli.jpg" alt="Sheikh Sulayman al-Ruhayli">
+          <img class="card-person" src="assets/scholars/aziz-farhan.jpg" alt="Sheikh Aziz bin Farhan al-Anizi">
+          <img class="card-person" src="assets/scholars/abdur-razzaq-al-badr.jpg" alt="Sheikh Abdur Razzaq al-Badr">
+        </div>
         <h3 class="card-title">Clips from Scholars</h3>
         <p class="card-desc">Carefully curated excerpts from trusted Islamic scholars, bringing knowledge to your fingertips.</p>
       </div>
